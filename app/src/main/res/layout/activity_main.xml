@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.quoctuan.demoall.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtThongTinHoaDon"
+        android:text="Thông Tin Hóa Đơn : "
+        android:textSize="20dp"
+        android:background="#FFFF00"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtThongTinHoaDon"
+        android:id="@+id/txtTenKH"
+        android:text="Tên Khách hàng : "
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtThongTinHoaDon"
+        android:layout_toRightOf="@+id/txtTenKH"
+        android:id="@+id/txtTen"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTen"
+        android:id="@+id/txtSoLuongSach"
+        android:text="Số lượng sách : "
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTen"
+        android:layout_toRightOf="@id/txtSoLuongSach"
+        android:id="@+id/txtSach"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSach"
+        android:layout_toRightOf="@id/txtSoLuongSach"
+        android:text="Khách hàng Vip"
+        android:id="@+id/chkVip"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkVip"
+        android:id="@+id/txtThanhTien"
+        android:text="Thành tiền : "
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chkVip"
+        android:layout_toRightOf="@id/txtThanhTien"
+        android:id="@+id/txtTT"
+        android:background="#C0C0C0"
+        android:textColor="#008000"
+        android:gravity="center"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTT"
+        android:id="@+id/btnTinhTT"
+        android:text="Tính TT"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTT"
+        android:id="@+id/btnTiep"
+        android:text="Tiếp"
+        android:layout_marginLeft="150dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTT"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnThongKe"
+        android:text="Thống Kê"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnTiep"
+        android:id="@+id/txtThongTinThongKe"
+        android:text="Thông tin thống kê : "
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:background="#FFFF00"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtThongTinThongKe"
+        android:id="@+id/txtTongSoKH"
+        android:text="Tổng số KH : "
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtThongTinThongKe"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/txtTongSoKH"
+        android:id="@+id/txtTongKH"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTongKH"
+        android:id="@+id/txtTongSoKHVip"
+        android:text="Tổng KH Vip : "
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTongKH"
+        android:layout_toRightOf="@id/txtTongSoKHVip"
+        android:layout_marginLeft="45dp"
+        android:id="@+id/txtTongKHVip"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTongKHVip"
+        android:id="@+id/txtTongDoanhThu"
+        android:text="Tổng doanh thu : "
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTongSoKHVip"
+        android:layout_toRightOf="@id/txtTongDoanhThu"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/txtDoanhThu"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDoanhThu"
+        android:background="#008080"
+        android:id="@+id/txtText"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtText"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/close"
+        android:id="@+id/btnExit"
+        />
+
+
+</RelativeLayout>
